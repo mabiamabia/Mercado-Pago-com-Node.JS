@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap");
+.bg-video {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-video:before {
+    content: "";
+    width: 100%;
+    padding-bottom: 56.25%;
+    display: block;
+    height: 0;
+}
+
+.bg-video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000%;
+    height: 135%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    font-size: max(5vmin, 16px);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+    font-family: "Recursive", sans-serif;
+    background-image: linear-gradient(168deg,rgba(29, 116, 255, 1), rgba(96, 217, 255, 1));
+    color: white;
+    border-radius: 9px;
+    border: none;
+    box-shadow: inset 0 0 1em rgb(58, 125, 233, 0.25), 0 0 1em rgba(71, 184, 255, 0.75);
+    height: 2.5em;
+    width: 7.5em;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-size: 36px;
+    transition: 400ms ease;
+}
